@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Icon from '@/components/ui/AppIcon';
 
 interface Solution {
@@ -139,12 +140,22 @@ export default function SolutionsSection() {
             {/* Top row */}
             <div className="flex items-start justify-between">
               <div className="size-12 rounded-2xl bg-bg border border-border flex items-center justify-center transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20">
-                <Icon
-                  name={solution.icon as Parameters<typeof Icon>[0]['name']}
-                  size={22}
-                  variant="outline"
-                  className="text-foreground group-hover:text-white transition-colors duration-300"
-                />
+                {solution.id === '01' ? (
+                  <Image
+                    src="/assets/images/Logos_Android_OtoStop_1-1777551579025.png"
+                    alt="Logo OtoStop"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                ) : (
+                  <Icon
+                    name={solution.icon as Parameters<typeof Icon>[0]['name']}
+                    size={22}
+                    variant="outline"
+                    className="text-foreground group-hover:text-white transition-colors duration-300"
+                  />
+                )}
               </div>
               <span className="label-tag text-muted transition-colors duration-300 group-hover:text-white/40">
                 Prod_{solution.id}

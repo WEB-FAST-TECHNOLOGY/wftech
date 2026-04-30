@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SocialProof from '@/components/SocialProof';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'OtoStop — Mobilité intelligente | WFTECH',
@@ -86,6 +87,15 @@ export default function OtoStopPage() {
             <div className="flex items-center gap-3 mb-6">
               <span className="font-mono text-[11px] tracking-widest uppercase px-3 py-1.5 border border-border rounded-full text-muted">Transport & Mobilité</span>
               <span className="font-mono text-[11px] tracking-widest uppercase px-3 py-1.5 border border-border rounded-full text-muted">Prod_01</span>
+            </div>
+            <div className="mb-6">
+              <Image
+                src="/assets/images/Logos_Android_OtoStop_1-1777551579025.png"
+                alt="Logo OtoStop"
+                width={120}
+                height={120}
+                className="object-contain"
+              />
             </div>
             <h1 className="font-sans text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-none mb-4">
               OtoStop
