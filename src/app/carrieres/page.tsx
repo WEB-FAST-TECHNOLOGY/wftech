@@ -102,7 +102,7 @@ export default function Carrieres() {
                 Vous ne trouvez pas le poste idéal ? Envoyez-nous votre candidature spontanée.
               </p>
               <a
-                href="mailto:carrieres@wftech.fr"
+                href="mailto:carrieres@wftech.com"
                 className="inline-block font-mono text-[11px] font-medium tracking-widest uppercase bg-foreground text-white px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
               >
                 Envoyer ma candidature

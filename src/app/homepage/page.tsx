@@ -34,13 +34,13 @@ export default function Homepage() {
               {
                 '@type': 'Organization',
                 name: 'WFTECH',
-                url: 'https://wftech.fr',
+                url: 'https://wftech.com',
                 logo: '/assets/images/app_logo.png',
                 description:
                   'Studio startup spécialisé dans la création de solutions numériques : logiciels logistiques, agricoles, de santé, e-commerce, applications mobiles, IA et R&D.',
                 contactPoint: {
                   '@type': 'ContactPoint',
-                  email: 'contact@wftech.fr',
+                  email: 'contact@wftech.com',
                   contactType: 'customer service',
                   availableLanguage: 'French',
                 },
@@ -48,7 +48,7 @@ export default function Homepage() {
               {
                 '@type': 'WebPage',
                 name: 'WFTECH — Studio de Solutions Numériques',
-                url: 'https://wftech.fr/homepage',
+                url: 'https://wftech.com/homepage',
                 description:
                   'WFTECH crée des solutions numériques innovantes pour les secteurs de la logistique, l\'agriculture, la santé, l\'e-commerce, le mobile et l\'IA.',
               },

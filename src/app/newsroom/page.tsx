@@ -110,10 +110,10 @@ export default function Newsroom() {
               Pour toute demande médiatique ou interview, contactez notre équipe communication.
             </p>
             <a
-              href="mailto:presse@wftech.fr"
+              href="mailto:presse@wftech.com"
               className="font-mono text-[11px] font-medium tracking-widest uppercase text-foreground hover:text-muted transition-colors underline underline-offset-4"
             >
-              presse@wftech.fr
+              presse@wftech.com
             </a>
           </div>
         </div>

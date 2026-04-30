@@ -74,7 +74,7 @@ const solutions: Solution[] = [
     name: 'Dirty Meta',
     tagline: 'Données brutes, insights nets',
     description:
-      'C\'est une immersion dans un univers virtuel de jeux de rôle les plus bizarres du monde virtuel',
+      'Outil d\'extraction, de nettoyage et de valorisation des métadonnées. Transformez vos données brutes non structurées en insights exploitables grâce à des pipelines ETL visuels et une gouvernance maîtrisée.',
     domain: 'Data & Analytics',
     tags: ['Data', 'ETL', 'Métadonnées'],
     icon: 'CircleStackIcon',

@@ -138,10 +138,10 @@ export default function Contact() {
                     Partenariats & Business
                   </p>
                   <a
-                    href="mailto:business@wftech.fr"
+                    href="mailto:business@wftech.com"
                     className="font-sans text-xl font-bold text-foreground hover:text-muted transition-colors"
                   >
-                    business@wftech.fr
+                    business@wftech.com
                   </a>
                 </div>
 
@@ -150,10 +150,10 @@ export default function Contact() {
                     Support technique
                   </p>
                   <a
-                    href="mailto:support@wftech.fr"
+                    href="mailto:support@wftech.com"
                     className="font-sans text-xl font-bold text-foreground hover:text-muted transition-colors"
                   >
-                    support@wftech.fr
+                    support@wftech.com
                   </a>
                 </div>
 
@@ -170,7 +170,7 @@ export default function Contact() {
               {/* Quick Actions */}
               <div className="mt-12 space-y-px bg-border">
                 {[
-                  { label: 'Devenir partenaire', desc: 'Explorons les opportunités de collaboration.', href: 'mailto:business@wftech.fr?subject=Partenariat' },
+                  { label: 'Devenir partenaire', desc: 'Explorons les opportunités de collaboration.', href: 'mailto:business@wftech.com?subject=Partenariat' },
                   { label: "Rejoindre l'équipe", desc: "Consultez nos offres d'emploi et postulez.", href: '/carrieres' },
                 ].map((action) => (
                   <a
