@@ -41,10 +41,10 @@ export default function Contact() {
                     Email général
                   </p>
                   <a
-                    href="mailto:contact@wftech.fr"
+                    href="mailto:contact@wftech.com"
                     className="font-sans text-xl font-bold text-foreground hover:text-muted transition-colors"
                   >
-                    contact@wftech.fr
+                    contact@wftech.com
                   </a>
                 </div>
 
@@ -77,7 +77,7 @@ export default function Contact() {
                     Localisation
                   </p>
                   <p className="font-sans text-base text-foreground font-medium">
-                    Afrique de l'Ouest · Remote-first
+                    Cameroun, Yaoundé — News Street Nkolndogo
                   </p>
                 </div>
               </div>

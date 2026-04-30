@@ -44,10 +44,10 @@ export default function ContactSection() {
                 <div>
                   <p className="label-tag text-muted mb-0.5">Email</p>
                   <a
-                    href="mailto:contact@wftech.fr"
+                    href="mailto:contact@wftech.com"
                     className="text-foreground text-sm font-medium hover:underline underline-offset-4"
                   >
-                    contact@wftech.fr
+                    contact@wftech.com
                   </a>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export default function ContactSection() {
                 </span>
                 <div>
                   <p className="label-tag text-muted mb-0.5">Localisation</p>
-                  <p className="text-foreground text-sm font-medium">France — Remote disponible</p>
+                  <p className="text-foreground text-sm font-medium">Cameroun, Yaoundé — News Street Nkolndogo</p>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ export default function ContactSection() {
             </div>
 
             <a
-              href="mailto:contact@wftech.fr"
+              href="mailto:contact@wftech.com"
               className="inline-flex items-center gap-3 bg-foreground text-white px-8 py-4 rounded-xl font-mono text-[11px] font-medium tracking-widest uppercase hover:bg-gray-800 transition-colors w-fit mt-2"
             >
               Nous contacter
