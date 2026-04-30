@@ -44,7 +44,7 @@ export default function HeroSection() {
               Nous construisons ce qui fait{' '}
               <span className="italic font-light">avancer</span>
               <br />
-              votre entreprise.
+              le quotidien.
             </h1>
             <p className="text-white/60 text-base md:text-lg max-w-xl leading-relaxed mb-10 font-light">
               WFTECH est un studio de solutions numériques qui crée des logiciels et applications dans les domaines de la logistique, l&apos;agriculture, la santé, l&apos;e-commerce, la mobilité, l&apos;IA et la R&D.
