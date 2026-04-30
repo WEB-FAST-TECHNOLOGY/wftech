@@ -13,7 +13,7 @@ interface AppLogoProps {
 }
 
 const AppLogo = memo(function AppLogo({
-  src = '/assets/images/app_logo.png',
+  src = '/assets/images/Screenshot_20260417_062531_OneDrive-1777548486628.jpg',
   iconName = 'SparklesIcon',
   size = 64,
   className = '',
@@ -33,10 +33,10 @@ const AppLogo = memo(function AppLogo({
       {src ? (
         <AppImage
           src={src}
-          alt="Logo" 
+          alt="WFTECH Logo" 
           width={size}
           height={size}
-          className="flex-shrink-0"
+          className="flex-shrink-0 object-contain"
           priority={true}
           unoptimized={src.endsWith('.svg')}
         />
