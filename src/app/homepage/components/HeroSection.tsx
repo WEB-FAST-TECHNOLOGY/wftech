@@ -72,15 +72,6 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row items-end justify-between gap-6 mt-8">
           {/* Stats */}
           <div className="flex gap-10">
-            <div className="flex flex-col gap-1">
-              <span className="text-white font-bold text-2xl tracking-tight">+50</span>
-              <span className="label-tag text-white/40">Projets livrés</span>
-            </div>
-            <div className="w-px h-10 bg-white/10 self-center" />
-            <div className="flex flex-col gap-1">
-              <span className="text-white font-bold text-2xl tracking-tight">8 ans</span>
-              <span className="label-tag text-white/40">D&apos;expérience</span>
-            </div>
             <div className="w-px h-10 bg-white/10 self-center hidden sm:block" />
             <div className="hidden sm:flex flex-col gap-1">
               <span className="text-white font-bold text-2xl tracking-tight">100%</span>
