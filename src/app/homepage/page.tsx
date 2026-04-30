@@ -9,15 +9,31 @@ import SolutionsSection from './components/SolutionsSection';
 
 export const metadata: Metadata = {
   title: 'WFTECH — Studio de Solutions Numériques',
-  description:
-    'WFTECH est un studio startup qui crée des solutions numériques dans les domaines des services, logiciels logistiques, agricoles, de santé, e-commerce, R&D, applications mobiles et IA.',
+  description: 'Studio startup créant des solutions numériques innovantes : logistique, agriculture, santé, e-commerce, mobile, IA et R&D.',
   alternates: {
     canonical: '/homepage',
   },
   openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
     title: 'WFTECH — Studio de Solutions Numériques',
-    description: 'Solutions numériques sur mesure : logistique, agriculture, santé, e-commerce, mobile, IA et R&D.',
-    images: [{ url: '/assets/images/app_logo.png', width: 1200, height: 630 }],
+    description: 'Solutions numériques innovantes : logistique, agriculture, santé, e-commerce, mobile, IA et R&D.',
+    siteName: 'WFTECH',
+    images: [
+      {
+        url: '/assets/images/app_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'WFTECH — Studio de solutions numériques',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WFTECH — Studio de Solutions Numériques',
+    description: 'Solutions numériques innovantes : logistique, agriculture, santé, e-commerce, mobile, IA et R&D.',
+    images: ['/assets/images/app_logo.png'],
   },
 };
 
@@ -33,32 +49,51 @@ export default function Homepage() {
             '@graph': [
               {
                 '@type': 'Organization',
+                '@id': 'https://wftech2906.builtwithrocket.new/#organization',
                 name: 'WFTECH',
-                url: 'https://wftech.com',
-                logo: '/assets/images/app_logo.png',
-                description:
-                  'Studio startup spécialisé dans la création de solutions numériques : logiciels logistiques, agricoles, de santé, e-commerce, applications mobiles, IA et R&D.',
+                url: 'https://wftech2906.builtwithrocket.new',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://wftech2906.builtwithrocket.new/assets/images/app_logo.png',
+                  width: 1200,
+                  height: 630,
+                },
+                description: 'Studio startup spécialisé dans la création de solutions numériques innovantes pour logistique, agriculture, santé, e-commerce, mobile et IA.',
                 contactPoint: {
                   '@type': 'ContactPoint',
-                  email: 'contact@wftech.com',
                   contactType: 'customer service',
                   availableLanguage: 'French',
                 },
+                sameAs: [],
               },
               {
                 '@type': 'WebPage',
+                '@id': 'https://wftech2906.builtwithrocket.new/homepage#webpage',
+                url: 'https://wftech2906.builtwithrocket.new/homepage',
                 name: 'WFTECH — Studio de Solutions Numériques',
-                url: 'https://wftech.com/homepage',
-                description:
-                  'WFTECH crée des solutions numériques innovantes pour les secteurs de la logistique, l\'agriculture, la santé, l\'e-commerce, le mobile et l\'IA.',
+                description: 'Studio startup créant des solutions numériques innovantes : logistique, agriculture, santé, e-commerce, mobile, IA et R&D.',
+                isPartOf: {
+                  '@id': 'https://wftech2906.builtwithrocket.new/#website',
+                },
+                inLanguage: 'fr',
+              },
+              {
+                '@type': 'WebSite',
+                '@id': 'https://wftech2906.builtwithrocket.new/#website',
+                url: 'https://wftech2906.builtwithrocket.new',
+                name: 'WFTECH',
+                inLanguage: 'fr',
               },
               {
                 '@type': 'SoftwareApplication',
-                name: 'WFTECH',
+                '@id': 'https://wftech2906.builtwithrocket.new/#softwareapplication',
+                name: 'WFTECH Solutions',
                 applicationCategory: 'BusinessApplication',
+                description: 'Suite de solutions numériques pour logistique, agriculture, santé, e-commerce, mobile et IA.',
                 offers: {
-                  '@type': 'Offer',
-                  description: 'Solutions numériques sur mesure : logistique, agriculture, santé, e-commerce, mobile, IA, R&D',
+                  '@type': 'AggregateOffer',
+                  priceCurrency: 'USD',
+                  price: 'Contactez-nous',
                 },
               },
             ],

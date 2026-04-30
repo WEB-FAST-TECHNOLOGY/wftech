@@ -7,8 +7,30 @@ import SocialProof from '@/components/SocialProof';
 
 export const metadata: Metadata = {
   title: 'AI-Mimicry — L\'IA qui s\'adapte | WFTECH',
-  description: 'AI-Mimicry est le moteur d\'intelligence artificielle générative et adaptative de WFTECH. Agents conversationnels, automatisation de processus et modèles IA personnalisés.',
+  description: 'Moteur d\'IA générative et adaptative pour agents conversationnels, automatisation de processus et modèles IA personnalisés.',
   alternates: { canonical: '/solutions/ai-mimicry' },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    title: 'AI-Mimicry — L\'IA qui s\'adapte',
+    description: 'Moteur d\'IA générative pour agents conversationnels et automatisation de processus.',
+    siteName: 'WFTECH',
+    images: [
+      {
+        url: '/assets/images/app_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'AI-Mimicry — Moteur d\'intelligence artificielle',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI-Mimicry — L\'IA qui s\'adapte',
+    description: 'Moteur d\'IA générative pour agents conversationnels et automatisation de processus.',
+    images: ['/assets/images/app_logo.png'],
+  },
 };
 
 const features = [
@@ -48,6 +70,39 @@ const benefits = [
 export default function AiMimicryPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'WebPage',
+                '@id': 'https://wftech2906.builtwithrocket.new/solutions/ai-mimicry#webpage',
+                url: 'https://wftech2906.builtwithrocket.new/solutions/ai-mimicry',
+                name: 'AI-Mimicry — L\'IA qui s\'adapte',
+                description: 'Moteur d\'IA générative et adaptative pour agents conversationnels, automatisation de processus et modèles IA personnalisés.',
+                isPartOf: {
+                  '@id': 'https://wftech2906.builtwithrocket.new/#website',
+                },
+                inLanguage: 'fr',
+              },
+              {
+                '@type': 'SoftwareApplication',
+                '@id': 'https://wftech2906.builtwithrocket.new/solutions/ai-mimicry#softwareapplication',
+                name: 'AI-Mimicry',
+                applicationCategory: 'BusinessApplication',
+                description: 'Moteur d\'intelligence artificielle générative et adaptative.',
+                offers: {
+                  '@type': 'Offer',
+                  priceCurrency: 'USD',
+                  price: 'Contactez-nous',
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <Header />
       <main className="pt-32 pb-24 min-h-screen bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8">

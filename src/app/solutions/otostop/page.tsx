@@ -7,8 +7,30 @@ import SocialProof from '@/components/SocialProof';
 
 export const metadata: Metadata = {
   title: 'OtoStop — Mobilité intelligente | WFTECH',
-  description: 'OtoStop est la plateforme de gestion et d\'optimisation des arrêts de transport de WFTECH. Suivi en temps réel, planification de trajets et coordination des flux de mobilité urbaine.',
+  description: 'Plateforme de gestion et d\'optimisation des arrêts de transport avec suivi en temps réel et planification de trajets.',
   alternates: { canonical: '/solutions/otostop' },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    title: 'OtoStop — Mobilité intelligente',
+    description: 'Plateforme de gestion des arrêts de transport avec suivi en temps réel et optimisation des trajets.',
+    siteName: 'WFTECH',
+    images: [
+      {
+        url: '/assets/images/app_logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'OtoStop — Plateforme de mobilité intelligente',
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'OtoStop — Mobilité intelligente',
+    description: 'Plateforme de gestion des arrêts de transport avec suivi en temps réel et optimisation des trajets.',
+    images: ['/assets/images/app_logo.png'],
+  },
 };
 
 const features = [
