@@ -67,7 +67,7 @@ const services: Service[] = [
     label: 'Service_06',
     title: 'Intelligence Artificielle',
     description:
-      'L\'IA est au cœur de notre studio : AI-Mimicry reproduit des comportements humains complexes via le machine learning, tandis que Dirty Meta exploite les métadonnées pour des insights stratégiques. Automatisation, NLP et agents intelligents.',
+      'L\'IA est au cœur de notre studio : AI-Mimicry reproduit des phénomènes naturels complexes via le machine learning, exploite les métadonnées pour des insights stratégiques et la conception des prototype technologique. Automatisation, NLP et agents intelligents.',
     tags: ['AI-Mimicry', 'Dirty Meta', 'LLM', 'NLP', 'ML'],
     icon: 'CpuChipIcon',
     colSpan: 'md:col-span-1',
