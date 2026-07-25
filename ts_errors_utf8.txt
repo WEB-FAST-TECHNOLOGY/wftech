@@ -1,0 +1,2 @@
+﻿src/components/LangSwitcher.tsx(4,51): error TS2307: Cannot find module '@/context/LangContext' or its corresponding type declarations.
+src/components/LangSwitcher.tsx(48,29): error TS7006: Parameter 'l' implicitly has an 'any' type.

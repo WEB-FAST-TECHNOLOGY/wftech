@@ -1,0 +1,898 @@
+{
+    "nav": {
+        "services": "Services",
+        "solutions": "Solutions",
+        "company": "Company",
+        "contact": "Contact Us",
+        "about": "About",
+        "careers": "Careers",
+        "newsroom": "Newsroom"
+    },
+    "hero": {
+        "label": "Studio · Startup · Digital Solutions",
+        "available": "Available — 2026",
+        "tagline": "// Digital solutions studio",
+        "headline1": "We build what drives",
+        "headline2": "forward",
+        "headline3": "everyday life.",
+        "description": "WFTECH is a digital solutions studio that creates software and applications in logistics, agriculture, health, e-commerce, mobility, AI and R&D.",
+        "cta_services": "View our services",
+        "cta_products": "Discover our products",
+        "custom": "Custom-built",
+        "card_title": "Tailored solutions",
+        "card_subtitle": "Logistics · Health · AgriTech · AI",
+        "card_desc": "8 areas of expertise to accelerate your digital transformation."
+    },
+    "services": {
+        "label": "// Our domains",
+        "headline1": "Solutions for",
+        "headline2": "every sector.",
+        "description": "WFTECH is a startup studio that designs and launches its own digital products across 8 domains: logistics, agriculture, health, e-commerce, mobile, AI and R&D."
+    },
+    "solutions": {
+        "label": "// Our solutions",
+        "headline1": "7 products,",
+        "headline2": "one studio.",
+        "description": "WFTECH designs and develops proprietary digital solutions covering mobility, agriculture, health, data and AI."
+    },
+    "contact": {
+        "label": "// Contact",
+        "headline1": "Let's work",
+        "headline2": "together.",
+        "description": "A question about our solutions? Contact us directly. Our team responds within 24 hours.",
+        "address": "Cameroon, Yaoundé — News Street Nkolndogo",
+        "form_label": "Send a message",
+        "name_placeholder": "Your name",
+        "email_placeholder": "Your email",
+        "message_placeholder": "Your message…",
+        "submit": "Send",
+        "sending": "Sending…",
+        "success_title": "Message sent!",
+        "success_desc": "Thank you! Our team will respond within 24 business hours.",
+        "new_message": "New message",
+        "error": "An error occurred. Please try again."
+    },
+    "about_page": {
+        "label": "Company · About",
+        "title": "Who we are",
+        "mission_title": "Our mission",
+        "mission_desc": "WFTECH is a startup studio dedicated to creating custom digital solutions. We design innovative software that transforms sectors like logistics, agriculture, health, e-commerce, and many more.",
+        "vision_title": "Our vision",
+        "vision_desc": "We believe technology should be accessible, efficient, and adapted to local realities. Our ambition is to become the leading technological partner for African and global enterprises.",
+        "values_title": "Our values",
+        "values": [
+            {
+                "title": "Innovation",
+                "desc": "We push the boundaries of what is possible with cutting-edge technologies."
+            },
+            {
+                "title": "Excellence",
+                "desc": "Every line of code, every interface is designed for perfection."
+            },
+            {
+                "title": "Impact",
+                "desc": "Our solutions create real and measurable value for our clients."
+            }
+        ],
+        "stats": [
+            {
+                "number": "8+",
+                "label": "Areas of expertise"
+            },
+            {
+                "number": "100%",
+                "label": "Custom solutions"
+            },
+            {
+                "number": "2024",
+                "label": "Year of creation"
+            },
+            {
+                "number": "∞",
+                "label": "Ambition"
+            }
+        ]
+    },
+    "careers_page": {
+        "label": "Company · Careers",
+        "title": "Join Us",
+        "intro": "At WFTECH, we build the digital future. We are looking for passionate, curious, and ambitious talents who want to make a real impact through technology.",
+        "why_title": "Why WFTECH?",
+        "why_items": [
+            {
+                "icon": "🚀",
+                "title": "Ambitious projects",
+                "desc": "Work on products that transform entire industries."
+            },
+            {
+                "icon": "🌍",
+                "title": "Real impact",
+                "desc": "Your solutions reach thousands of users worldwide."
+            },
+            {
+                "icon": "📈",
+                "title": "Fast evolution",
+                "desc": "A startup environment where you grow as fast as the company."
+            },
+            {
+                "icon": "🤝",
+                "title": "Collaborative culture",
+                "desc": "A united, caring team focused on excellence."
+            }
+        ],
+        "jobs_title": "Open Positions",
+        "jobs": [
+            {
+                "title": "Full-Stack Developer",
+                "department": "Engineering",
+                "type": "Full-time",
+                "location": "Remote / Hybrid"
+            },
+            {
+                "title": "AI & Machine Learning Engineer",
+                "department": "R&D",
+                "type": "Full-time",
+                "location": "Remote"
+            },
+            {
+                "title": "UX/UI Designer",
+                "department": "Design",
+                "type": "Full-time",
+                "location": "Hybrid"
+            },
+            {
+                "title": "Mobile Developer (React Native)",
+                "department": "Engineering",
+                "type": "Full-time",
+                "location": "Remote"
+            },
+            {
+                "title": "Digital Project Manager",
+                "department": "Management",
+                "type": "Full-time",
+                "location": "Hybrid"
+            }
+        ],
+        "spontaneous_title": "Spontaneous Application",
+        "spontaneous_desc": "Can't find the perfect role? Send us a spontaneous application.",
+        "spontaneous_btn": "Send my application"
+    },
+    "newsroom_page": {
+        "label": "Company · Newsroom",
+        "title": "News",
+        "news": [
+            {
+                "date": "April 08, 2026",
+                "category": "Announcement",
+                "title": "WFTECH launches its intelligent logistics management platform",
+                "excerpt": "Our new SaaS solution revolutionizes supply chain management with integrated AI."
+            },
+            {
+                "date": "March 15, 2026",
+                "category": "Partnership",
+                "title": "WFTECH partners with key players in the agricultural sector",
+                "excerpt": "A strategic partnership to deploy our agricultural software on a large scale in West Africa."
+            },
+            {
+                "date": "February 01, 2026",
+                "category": "Product",
+                "title": "Launch of WFHealth: our digital health solution",
+                "excerpt": "WFHealth simplifies patient record management and improves medical follow-up for clinics."
+            },
+            {
+                "date": "January 10, 2026",
+                "category": "Company",
+                "title": "WFTECH crosses the milestone of 50 delivered projects",
+                "excerpt": "A major milestone that reflects our commitment to excellence and digital innovation."
+            }
+        ],
+        "press_title": "Press Contact",
+        "press_desc": "For all media inquiries or interviews, please contact our communications team."
+    },
+    "contact_page": {
+        "label": "Company · Contact",
+        "title": "Let's talk",
+        "intro": "Have a project in mind? A question about our services? Our team is available to assist you.",
+        "emails": {
+            "general": {
+                "label": "General Email",
+                "value": "contact@wftechsarl.com"
+            },
+            "business": {
+                "label": "Partnerships & Business",
+                "value": "business@wftech.com"
+            },
+            "support": {
+                "label": "Technical Support",
+                "value": "support@wftech.com"
+            }
+        },
+        "location": {
+            "label": "Location",
+            "value": "Cameroon, Yaoundé — News Street Nkolndogo"
+        },
+        "actions": [
+            {
+                "label": "Become a partner",
+                "desc": "Let's explore collaboration opportunities."
+            },
+            {
+                "label": "Join the team",
+                "desc": "Check out our job offers and apply."
+            }
+        ],
+        "form": {
+            "title": "Send a message",
+            "name": "Full Name",
+            "email": "Email Address",
+            "subject": "Subject",
+            "message": "Message",
+            "select_subject": "Select a subject",
+            "subjects": [
+                "Digital Project",
+                "Partnership",
+                "Technical Support",
+                "Recruitment",
+                "Other"
+            ],
+            "submit": "Send message",
+            "submitting": "Sending...",
+            "success_title": "Message sent!",
+            "success_desc": "Thank you for your message. Our team will respond within 24 business hours.",
+            "send_another": "Send another message",
+            "response_time": "Average response time: 24h.",
+            "response_desc": "Our team is committed to responding to all inquiries as soon as possible."
+        }
+    },
+    "otostop_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "OtoStop"
+        ],
+        "tags": [
+            "Transport & Mobility",
+            "Prod_01"
+        ],
+        "title": "OtoStop",
+        "subtitle": "Smart Mobility",
+        "intro": "Platform for managing and optimizing transport stops. Real-time tracking, route planning, and coordination of urban mobility flows for more efficient networks.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Real-time tracking",
+                "desc": "Visualize the position and status of each transport stop in real time on an interactive map."
+            },
+            {
+                "title": "Route planning",
+                "desc": "Optimization algorithms to plan the most efficient routes according to demand and constraints."
+            },
+            {
+                "title": "Flow coordination",
+                "desc": "Synchronize passenger flows between several lines and transport modes to reduce wait times."
+            },
+            {
+                "title": "Analytical dashboards",
+                "desc": "Detailed reports on footfall, delays, and performance for informed decision-making."
+            },
+            {
+                "title": "Alerts & notifications",
+                "desc": "Automatic alert system for incidents, delays, or anomalies detected on the network."
+            },
+            {
+                "title": "Open API",
+                "desc": "Easy integration with existing transport operator systems via a documented RESTful API."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "Urban transport",
+                "title": "Municipal bus networks",
+                "desc": "Cities use OtoStop to optimize their bus networks, reduce wait times, and improve user satisfaction."
+            },
+            {
+                "tag": "Shared mobility",
+                "title": "Carpooling operators",
+                "desc": "Carpooling platforms integrate OtoStop to coordinate pick-up points and maximize fill rates."
+            },
+            {
+                "tag": "Logistics",
+                "title": "Last-mile delivery",
+                "desc": "Delivery companies use OtoStop to optimize routes and reduce operational costs."
+            }
+        ],
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "40%",
+                "label": "Reduction in wait times"
+            },
+            {
+                "number": "25%",
+                "label": "Savings on operational costs"
+            },
+            {
+                "number": "98%",
+                "label": "Platform availability"
+            },
+            {
+                "number": "3×",
+                "label": "Improvement in user satisfaction"
+            }
+        ],
+        "cta_text": "Interested in OtoStop?",
+        "cta_button": "Contact us",
+        "socialProof": {
+            "caseStudy": {
+                "company": "Keolis Métropole",
+                "industry": "Urban Transport",
+                "result": "−38% average wait time",
+                "quote": "OtoStop allowed us to completely rethink the coordination of our bus lines. Real-time visibility transformed the way we operate."
+            }
+        }
+    },
+    "zehouse_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "ZEHOUSE"
+        ],
+        "tags": [
+            "Real Estate & Smart Home",
+            "Prod_02"
+        ],
+        "title": "ZEHOUSE",
+        "subtitle": "Connected Habitat",
+        "intro": "ZEHOUSE is a B2BC real estate professional networking platform. Property management and smart home solution including property control, tenant tracking, and living space automation.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Property Management",
+                "desc": "Centralize your real estate portfolio management: contracts, documents, inventories, and histories in one place."
+            },
+            {
+                "title": "Tenant Tracking",
+                "desc": "Manage tenant profiles, rent payments, maintenance requests, and real-time communication."
+            },
+            {
+                "title": "Integrated Home Automation",
+                "desc": "Control lighting, temperature, security, and connected devices from a unified interface."
+            },
+            {
+                "title": "Space Automation",
+                "desc": "Program automation scenarios to optimize energy consumption and occupant comfort."
+            },
+            {
+                "title": "Financial Reports",
+                "desc": "Track rental income, expenses, and profitability of each property with detailed financial dashboards."
+            },
+            {
+                "title": "Predictive Maintenance",
+                "desc": "Anticipate breakdowns and schedule maintenance using IoT sensors and predictive algorithms."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "PropTech",
+                "title": "Real Estate Agencies",
+                "desc": "Agencies use ZEHOUSE to manage their property portfolio, automate administrative processes, and improve tenant relationships."
+            },
+            {
+                "tag": "Smart Home",
+                "title": "Connected Residences",
+                "desc": "Real estate developers integrate ZEHOUSE to offer smart homes with full home automation control."
+            },
+            {
+                "tag": "Investment",
+                "title": "Real Estate Investors",
+                "desc": "Investors use ZEHOUSE to track their portfolio performance and optimize the profitability of their properties."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Foncia Groupe",
+                "industry": "Property Management",
+                "result": "−60% manual administrative tasks",
+                "quote": "ZEHOUSE revolutionized the way we manage properties. Our property managers save hours each week and our tenants are much more satisfied."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "60%",
+                "label": "Reduction in administrative tasks"
+            },
+            {
+                "number": "30%",
+                "label": "Energy savings"
+            },
+            {
+                "number": "95%",
+                "label": "Tenant satisfaction"
+            },
+            {
+                "number": "2×",
+                "label": "Improved rental yield"
+            }
+        ],
+        "cta_text": "Interested in ZEHOUSE?",
+        "cta_button": "Contact us",
+        "search_title": "Explore Live Properties",
+        "search_placeholder": "Search by address or title...",
+        "filter_all": "All Properties",
+        "filter_sale": "For Sale",
+        "filter_rent": "For Rent",
+        "filter_price": "Max price",
+        "filter_surface": "Min surface",
+        "no_listings": "No properties found matching your criteria.",
+        "admin_title": "ZEHOUSE Admin Control Console",
+        "admin_subtitle": "B2BC Network Oversight & Real-time IoT Monitoring",
+        "admin_tab_dashboard": "Dashboard",
+        "admin_tab_users": "Members & Roles",
+        "admin_tab_listings": "Property Moderation",
+        "admin_tab_reports": "Reports & Alerts",
+        "admin_metric_listings": "Total Listings",
+        "admin_metric_active": "Active Listings",
+        "admin_metric_verified": "Verified Pros",
+        "admin_metric_reports": "Active Reports",
+        "admin_user_name": "User name",
+        "admin_user_role": "System role",
+        "admin_user_phone": "Phone number",
+        "admin_user_verification": "Pro Verification",
+        "admin_user_action": "Moderator Action",
+        "admin_listing_title": "Property title",
+        "admin_listing_address": "Address",
+        "admin_listing_price": "Price",
+        "admin_listing_status": "Publish status",
+        "admin_report_reason": "Report Reason",
+        "admin_report_details": "Report Details",
+        "admin_action_ban": "Ban",
+        "admin_action_verify": "Verify",
+        "admin_action_unverify": "Revoke",
+        "admin_action_active": "Activate",
+        "admin_action_archive": "Archive",
+        "admin_action_delete": "Delete"
+    },
+    "zetravel_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "ZETRAVEL"
+        ],
+        "tags": [
+            "TravelTech",
+            "Prod_03"
+        ],
+        "title": "ZETRAVEL",
+        "subtitle": "Frictionless Travel",
+        "intro": "Travel planning and booking application. Personalized itineraries, reservation management, and custom travel experiences for unforgettable adventures.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "AI Itinerary Planning",
+                "desc": "Generate personalized itineraries in seconds using AI, tailored to your preferences, budget, and time constraints."
+            },
+            {
+                "title": "Centralized Booking",
+                "desc": "Book flights, hotels, activities, and transport from a single interface, with real-time price comparison."
+            },
+            {
+                "title": "Corporate Travel Management",
+                "desc": "Dedicated tools for businesses to manage corporate travel, expense reports, and travel policy compliance."
+            },
+            {
+                "title": "Contextual Recommendations",
+                "desc": "Suggestions for activities, restaurants, and experiences based on location, weather, and user preferences."
+            },
+            {
+                "title": "Sharing & Collaboration",
+                "desc": "Plan group trips with real-time collaboration tools and activity voting."
+            },
+            {
+                "title": "Offline Mode",
+                "desc": "Access your itineraries, reservations, and maps even without an internet connection while traveling."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "Tourism",
+                "title": "Travel Agencies",
+                "desc": "Agencies use ZETRAVEL to create and manage personalized tour packages, reducing design time by 70%."
+            },
+            {
+                "tag": "Corporate",
+                "title": "Corporate Travel",
+                "desc": "Companies deploy ZETRAVEL to centralize corporate travel management and optimize costs."
+            },
+            {
+                "tag": "Leisure",
+                "title": "Independent Travelers",
+                "desc": "Individual travelers use ZETRAVEL to plan custom adventures with ultra-personalized AI recommendations."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Club Med",
+                "industry": "High-end Tourism",
+                "result": "−70% itinerary planning time",
+                "quote": "ZETRAVEL transformed our custom trip creation process. Our advisors can now propose personalized itineraries in minutes."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "70%",
+                "label": "Time saved on planning"
+            },
+            {
+                "number": "20%",
+                "label": "Savings on bookings"
+            },
+            {
+                "number": "4.8/5",
+                "label": "User satisfaction score"
+            },
+            {
+                "number": "50+",
+                "label": "Destinations covered"
+            }
+        ],
+        "cta_text": "Interested in ZETRAVEL?",
+        "cta_button": "Contact us"
+    },
+    "logistikagricol_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "LogistikAgricol"
+        ],
+        "tags": [
+            "AgriTech & Logistics",
+            "Prod_04"
+        ],
+        "title": "LogistikAgricol",
+        "subtitle": "Digital Agriculture",
+        "intro": "Agricultural logistics management software. Crop traceability, inventory optimization, delivery coordination, and dashboards for modern farmers.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Crop Traceability",
+                "desc": "Track each production batch from seed to final delivery with complete and certifiable traceability."
+            },
+            {
+                "title": "Agricultural Inventory Management",
+                "desc": "Optimize your stock levels of inputs, seeds, and harvested products to avoid shortages and losses."
+            },
+            {
+                "title": "Delivery Coordination",
+                "desc": "Plan and optimize collection and delivery routes to reduce transportation costs and delays."
+            },
+            {
+                "title": "Farmer Dashboards",
+                "desc": "Visualize your farm's performance in real time: yields, costs, margins, and harvest forecasts."
+            },
+            {
+                "title": "Supplier Management",
+                "desc": "Centralize relationships with your input suppliers, negotiate prices, and track pending orders."
+            },
+            {
+                "title": "Compliance & Certifications",
+                "desc": "Automatically generate compliance documents for organic certifications, health standards, and audits."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "AgriTech",
+                "title": "Farms",
+                "desc": "Farmers use LogistikAgricol to digitize their daily management and improve the profitability of their operations."
+            },
+            {
+                "tag": "Cooperatives",
+                "title": "Agricultural Cooperatives",
+                "desc": "Cooperatives coordinate the collection, storage, and marketing of their members' productions via LogistikAgricol."
+            },
+            {
+                "tag": "Agro-industry",
+                "title": "Food Industries",
+                "desc": "Manufacturers use LogistikAgricol to secure their supply and guarantee the traceability of their raw materials."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Cooperative Terrena",
+                "industry": "Agricultural Cooperative",
+                "result": "−35% post-harvest losses this season",
+                "quote": "LogistikAgricol allowed us to coordinate the collection from 12,000 members with unmatched precision. Traceability is now absolute, from plot to delivery."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "35%",
+                "label": "Reduction in post-harvest losses"
+            },
+            {
+                "number": "28%",
+                "label": "Savings on logistics"
+            },
+            {
+                "number": "100%",
+                "label": "Guaranteed traceability"
+            },
+            {
+                "number": "5×",
+                "label": "Return on investment"
+            }
+        ],
+        "cta_text": "Interested in LogistikAgricol?",
+        "cta_button": "Contact us"
+    },
+    "dirtymeta_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "Dirty Meta"
+        ],
+        "tags": [
+            "Data & Analytics",
+            "Prod_05"
+        ],
+        "title": "Dirty Meta",
+        "subtitle": "Raw Data, Clean Insights",
+        "intro": "DIRTY META is the most bizarre immersive game in the world",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Metadata Extraction",
+                "desc": "Automatically extract metadata from all your data sources: files, databases, APIs, and real-time streams."
+            },
+            {
+                "title": "Cleaning & Normalization",
+                "desc": "Detect and correct anomalies, duplicates, and inconsistencies in your data using configurable cleaning rules."
+            },
+            {
+                "title": "Visual ETL Pipeline",
+                "desc": "Build data transformation pipelines with a drag-and-drop interface without writing a single line of code."
+            },
+            {
+                "title": "Data Cataloging",
+                "desc": "Create a centralized catalog of all your data with enriched metadata, tags, and automatic descriptions."
+            },
+            {
+                "title": "Data Quality",
+                "desc": "Measure and track your data quality with real-time completeness, accuracy, and consistency scores."
+            },
+            {
+                "title": "Data Governance",
+                "desc": "Define access, retention, and compliance policies to ensure the governance of your data assets."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "Data Engineering",
+                "title": "Data & Analytics Teams",
+                "desc": "Data engineers use Dirty Meta to automate data cleaning and reduce preparation time by 80%."
+            },
+            {
+                "tag": "E-commerce",
+                "title": "E-commerce Platforms",
+                "desc": "E-tailers clean and enrich their product catalogs to improve search and recommendations."
+            },
+            {
+                "tag": "Finance",
+                "title": "Financial Institutions",
+                "desc": "Banks and insurance companies use Dirty Meta to ensure regulatory compliance and the quality of their customer data."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Cdiscount",
+                "industry": "E-commerce",
+                "result": "10× faster on product data analysis",
+                "quote": "Dirty Meta transformed our data pipeline. We reduced the time spent cleaning our catalogs by 80%, and our teams can finally focus on analysis."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "80%",
+                "label": "Reduction in preparation time"
+            },
+            {
+                "number": "99%",
+                "label": "Accuracy of cleaned data"
+            },
+            {
+                "number": "10×",
+                "label": "Acceleration of analysis"
+            },
+            {
+                "number": "0",
+                "label": "Coding skills required"
+            }
+        ],
+        "cta_text": "Interested in Dirty Meta?",
+        "cta_button": "Contact us"
+    },
+    "healthof_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "Health-of"
+        ],
+        "tags": [
+            "HealthTech",
+            "Prod_06"
+        ],
+        "title": "Health-of",
+        "subtitle": "Augmented Health",
+        "intro": "Health and wellness monitoring platform. Digital patient records, teleconsultation, and prevention tools for healthcare professionals and patients.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Digital Patient Record",
+                "desc": "Centralize the complete medical history of each patient: consultations, prescriptions, test results, and medical history."
+            },
+            {
+                "title": "Teleconsultation",
+                "desc": "Secure remote medical consultation platform with HD video, document sharing, and electronic prescription."
+            },
+            {
+                "title": "Wellness Tracking",
+                "desc": "Personalized dashboards to track health indicators, wellness goals, and prevention programs."
+            },
+            {
+                "title": "Appointment Management",
+                "desc": "Online appointment booking system with automatic reminders, schedule management, and reduction of no-shows."
+            },
+            {
+                "title": "Interoperability",
+                "desc": "Integration with hospital systems, laboratories, and pharmacies via HL7 FHIR and DICOM standards."
+            },
+            {
+                "title": "GDPR & Health Compliance",
+                "desc": "HDS-certified health data hosting, end-to-end encryption, and compliance with health regulations."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "HealthTech",
+                "title": "Clinics & Hospitals",
+                "desc": "Healthcare facilities deploy Health-of to digitize patient journeys and improve care coordination."
+            },
+            {
+                "tag": "Telemedicine",
+                "title": "Private Practitioners",
+                "desc": "Practitioners use Health-of to offer remote consultations and manage their patient base efficiently."
+            },
+            {
+                "tag": "Prevention",
+                "title": "Public Health Programs",
+                "desc": "Public health organizations use Health-of to deploy prevention and epidemiological monitoring programs."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Ramsay Santé",
+                "industry": "Private Clinics",
+                "result": "−50% teleconsultation wait times",
+                "quote": "Health-of allowed our practitioners to provide high-quality remote consultations while maintaining continuity of care. Patient adoption was immediate."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "50%",
+                "label": "Reduction in consultation times"
+            },
+            {
+                "number": "40%",
+                "label": "Improvement in compliance"
+            },
+            {
+                "number": "99.9%",
+                "label": "Platform availability"
+            },
+            {
+                "number": "100%",
+                "label": "Regulatory compliance"
+            }
+        ],
+        "cta_text": "Interested in Health-of?",
+        "cta_button": "Contact us"
+    },
+    "aimimicry_page": {
+        "breadcrumb": [
+            "Home",
+            "Solutions",
+            "AI-Mimicry"
+        ],
+        "tags": [
+            "Artificial Intelligence",
+            "Prod_07"
+        ],
+        "title": "AI-Mimicry",
+        "subtitle": "The AI That Adapts",
+        "intro": "Generative and adaptive artificial intelligence engine. Conversational agents, process automation, and customized AI models for every business.",
+        "features_title": "Features",
+        "features": [
+            {
+                "title": "Conversational Agents",
+                "desc": "Deploy conversational AI assistants capable of understanding business context and accurately responding to your users."
+            },
+            {
+                "title": "Process Automation",
+                "desc": "Automate repetitive tasks and complex workflows using autonomous AI agents that learn from your processes."
+            },
+            {
+                "title": "Model Fine-tuning",
+                "desc": "Customize LLM models on your proprietary data to achieve optimal performance in your business domain."
+            },
+            {
+                "title": "Multi-Agent Orchestration",
+                "desc": "Coordinate multiple specialized AI agents to solve complex problems requiring multiple skills."
+            },
+            {
+                "title": "RAG & Knowledge Base",
+                "desc": "Connect AI to your existing documents, databases, and systems for precise and contextualized responses."
+            },
+            {
+                "title": "Monitoring & Explainability",
+                "desc": "Track your AI models' performance, detect drifts, and understand decisions made using explainability tools."
+            }
+        ],
+        "use_cases_title": "Use Cases",
+        "use_cases": [
+            {
+                "tag": "Customer Service",
+                "title": "Support Automation",
+                "desc": "Companies deploy AI-Mimicry to automate 80% of customer support requests with contextual AI agents."
+            },
+            {
+                "tag": "HR & Recruiting",
+                "title": "Resume Screening",
+                "desc": "HR teams use AI-Mimicry to analyze resumes, conduct pre-interviews, and identify the best profiles."
+            },
+            {
+                "tag": "Finance",
+                "title": "Financial Document Analysis",
+                "desc": "Financial institutions automate the analysis of contracts, reports, and regulatory documents with AI-Mimicry."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Allianz France",
+                "industry": "Insurance",
+                "result": "80% of support requests treated automatically",
+                "quote": "AI-Mimicry exceeded all our expectations. The AI agents understand the insurance context with remarkable precision, and our clients can no longer tell the difference between them and a human advisor."
+            }
+        },
+        "benefits_title": "Benefits",
+        "benefits": [
+            {
+                "number": "80%",
+                "label": "Automated tasks"
+            },
+            {
+                "number": "10×",
+                "label": "Team productivity"
+            },
+            {
+                "number": "24/7",
+                "label": "AI agent availability"
+            },
+            {
+                "number": "6 wks",
+                "label": "Deployment time"
+            }
+        ],
+        "cta_text": "Interested in AI-Mimicry?",
+        "cta_button": "Contact us"
+    }
+}

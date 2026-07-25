@@ -1,0 +1,863 @@
+{
+    "nav": {
+        "services": "服务",
+        "solutions": "解决方案",
+        "company": "公司",
+        "contact": "联系我们",
+        "about": "关于我们",
+        "careers": "招聘",
+        "newsroom": "新闻室"
+    },
+    "hero": {
+        "label": "工作室 · 创业公司 · 数字解决方案",
+        "available": "可用 — 2026",
+        "tagline": "// 数字解决方案工作室",
+        "headline1": "我们构建推动",
+        "headline2": "前进",
+        "headline3": "日常生活的力量。",
+        "description": "WFTECH 是一家数字解决方案工作室，在物流、农业、健康、电子商务、移动出行、人工智能和研发领域创建软件和应用程序。",
+        "cta_services": "查看我们的服务",
+        "cta_products": "探索我们的产品",
+        "custom": "定制化",
+        "card_title": "量身定制的解决方案",
+        "card_subtitle": "物流 · 健康 · 农业科技 · 人工智能",
+        "card_desc": "8个专业领域，加速您的数字化转型。"
+    },
+    "services": {
+        "label": "// 我们的领域",
+        "headline1": "各行业的",
+        "headline2": "解决方案。",
+        "description": "WFTECH 是一家创业工作室，在8个领域设计并推出自有数字产品：物流、农业、健康、电商、移动、人工智能和研发。"
+    },
+    "solutions": {
+        "label": "// 我们的解决方案",
+        "headline1": "7款产品，",
+        "headline2": "一个工作室。",
+        "description": "WFTECH 设计并开发涵盖移动出行、农业、健康、数据和人工智能的专有数字解决方案。"
+    },
+    "contact": {
+        "label": "// 联系",
+        "headline1": "让我们",
+        "headline2": "合作。",
+        "description": "对我们的解决方案有疑问？直接联系我们。我们的团队将在24小时内回复。",
+        "address": "喀麦隆，雅温得 — News Street Nkolndogo",
+        "form_label": "发送消息",
+        "name_placeholder": "您的姓名",
+        "email_placeholder": "您的邮箱",
+        "message_placeholder": "您的消息…",
+        "submit": "发送",
+        "sending": "发送中…",
+        "success_title": "消息已发送！",
+        "success_desc": "谢谢！我们的团队将在24个工作小时内回复。",
+        "new_message": "新消息",
+        "error": "发生错误，请重试。"
+    },
+    "about_page": {
+        "label": "Entreprise · À propos",
+        "title": "Qui sommes-nous",
+        "mission_title": "Notre mission",
+        "mission_desc": "WFTECH est un studio startup dédié à la création de solutions numériques sur mesure. Nous concevons des logiciels innovants qui transforment les secteurs de la logistique, de l'agriculture, de la santé, de l'e-commerce et bien d'autres.",
+        "vision_title": "Notre vision",
+        "vision_desc": "Nous croyons que la technologie doit être accessible, efficace et adaptée aux réalités locales. Notre ambition est de devenir le partenaire technologique de référence pour les entreprises africaines et mondiales.",
+        "values_title": "Nos valeurs",
+        "values": [
+            {
+                "title": "Innovation",
+                "desc": "Nous repoussons les limites du possible avec des technologies de pointe."
+            },
+            {
+                "title": "Excellence",
+                "desc": "Chaque ligne de code, chaque interface est pensée pour la perfection."
+            },
+            {
+                "title": "Impact",
+                "desc": "Nos solutions créent une valeur réelle et mesurable pour nos clients."
+            }
+        ],
+        "stats": [
+            {
+                "number": "8+",
+                "label": "Domaines d'expertise"
+            },
+            {
+                "number": "100%",
+                "label": "Solutions sur mesure"
+            },
+            {
+                "number": "2024",
+                "label": "Année de création"
+            },
+            {
+                "number": "∞",
+                "label": "Ambition"
+            }
+        ]
+    },
+    "careers_page": {
+        "label": "Entreprise · Carrières",
+        "title": "Rejoignez-nous",
+        "intro": "Chez WFTECH, nous construisons l'avenir numérique. Nous recherchons des talents passionnés, curieux et ambitieux qui souhaitent avoir un impact réel à travers la technologie.",
+        "why_title": "Pourquoi WFTECH ?",
+        "why_items": [
+            {
+                "icon": "🚀",
+                "title": "Projets ambitieux",
+                "desc": "Travaillez sur des produits qui transforment des industries entières."
+            },
+            {
+                "icon": "🌍",
+                "title": "Impact réel",
+                "desc": "Vos solutions touchent des milliers d'utilisateurs à travers le monde."
+            },
+            {
+                "icon": "📈",
+                "title": "Évolution rapide",
+                "desc": "Un environnement startup où vous grandissez aussi vite que l'entreprise."
+            },
+            {
+                "icon": "🤝",
+                "title": "Culture collaborative",
+                "desc": "Une équipe soudée, bienveillante et tournée vers l'excellence."
+            }
+        ],
+        "jobs_title": "Postes ouverts",
+        "jobs": [
+            {
+                "title": "Développeur Full-Stack",
+                "department": "Ingénierie",
+                "type": "CDI",
+                "location": "Remote / Hybride"
+            },
+            {
+                "title": "Ingénieur IA & Machine Learning",
+                "department": "R&D",
+                "type": "CDI",
+                "location": "Remote"
+            },
+            {
+                "title": "Designer UX/UI",
+                "department": "Design",
+                "type": "CDI",
+                "location": "Hybride"
+            },
+            {
+                "title": "Développeur Mobile (React Native)",
+                "department": "Ingénierie",
+                "type": "CDI",
+                "location": "Remote"
+            },
+            {
+                "title": "Chef de Projet Digital",
+                "department": "Management",
+                "type": "CDI",
+                "location": "Hybride"
+            }
+        ],
+        "spontaneous_title": "Candidature spontanée",
+        "spontaneous_desc": "Vous ne trouvez pas le poste idéal ? Envoyez-nous votre candidature spontanée.",
+        "spontaneous_btn": "Envoyer ma candidature"
+    },
+    "newsroom_page": {
+        "label": "Entreprise · Newsroom",
+        "title": "Actualités",
+        "news": [
+            {
+                "date": "08 Avril 2026",
+                "category": "Annonce",
+                "title": "WFTECH lance sa plateforme de gestion logistique intelligente",
+                "excerpt": "Notre nouvelle solution SaaS révolutionne la gestion des chaînes d'approvisionnement avec l'IA intégrée."
+            },
+            {
+                "date": "15 Mars 2026",
+                "category": "Partenariat",
+                "title": "WFTECH s'associe à des acteurs clés du secteur agricole",
+                "excerpt": "Un partenariat stratégique pour déployer nos logiciels agricoles à grande échelle en Afrique de l'Ouest."
+            },
+            {
+                "date": "01 Février 2026",
+                "category": "Produit",
+                "title": "Lancement de WFHealth : notre solution de santé numérique",
+                "excerpt": "WFHealth simplifie la gestion des dossiers patients et améliore le suivi médical pour les cliniques."
+            },
+            {
+                "date": "10 Janvier 2026",
+                "category": "Entreprise",
+                "title": "WFTECH franchit le cap des 50 projets livrés",
+                "excerpt": "Une étape majeure qui témoigne de notre engagement envers l'excellence et l'innovation numérique."
+            }
+        ],
+        "press_title": "Contact presse",
+        "press_desc": "Pour toute demande médiatique ou interview, contactez notre équipe communication."
+    },
+    "contact_page": {
+        "label": "Entreprise · Contact",
+        "title": "Parlons-en",
+        "intro": "Vous avez un projet en tête ? Une question sur nos services ? Notre équipe est disponible pour vous accompagner.",
+        "emails": {
+            "general": {
+                "label": "Email général",
+                "value": "contact@wftechsarl.com"
+            },
+            "business": {
+                "label": "Partenariats & Business",
+                "value": "business@wftech.com"
+            },
+            "support": {
+                "label": "Support technique",
+                "value": "support@wftech.com"
+            }
+        },
+        "location": {
+            "label": "Localisation",
+            "value": "Cameroun, Yaoundé — News Street Nkolndogo"
+        },
+        "actions": [
+            {
+                "label": "Devenir partenaire",
+                "desc": "Explorons les opportunités de collaboration."
+            },
+            {
+                "label": "Rejoindre l'équipe",
+                "desc": "Consultez nos offres d'emploi et postulez."
+            }
+        ],
+        "form": {
+            "title": "Envoyer un message",
+            "name": "Nom complet",
+            "email": "Adresse e-mail",
+            "subject": "Sujet",
+            "message": "Message",
+            "select_subject": "Sélectionnez un sujet",
+            "subjects": [
+                "Projet numérique",
+                "Partenariat",
+                "Support technique",
+                "Recrutement",
+                "Autre"
+            ],
+            "submit": "Envoyer le message",
+            "submitting": "Envoi en cours…",
+            "success_title": "Message envoyé !",
+            "success_desc": "Merci pour votre message. Notre équipe vous répondra dans les 24 heures ouvrées.",
+            "send_another": "Envoyer un autre message",
+            "response_time": "Temps de réponse moyen : 24h.",
+            "response_desc": "Notre équipe s'engage à répondre à toutes les demandes dans les meilleurs délais."
+        }
+    },
+    "otostop_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "OtoStop"
+        ],
+        "tags": [
+            "Transport & Mobilité",
+            "Prod_01"
+        ],
+        "title": "OtoStop",
+        "subtitle": "Mobilité intelligente",
+        "intro": "Plateforme de gestion et d'optimisation des arrêts de transport. Suivi en temps réel, planification de trajets et coordination des flux de mobilité urbaine pour des réseaux plus efficaces.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Suivi en temps réel",
+                "desc": "Visualisez la position et l'état de chaque arrêt de transport en temps réel sur une carte interactive."
+            },
+            {
+                "title": "Planification de trajets",
+                "desc": "Algorithmes d'optimisation pour planifier les itinéraires les plus efficaces selon la demande et les contraintes."
+            },
+            {
+                "title": "Coordination des flux",
+                "desc": "Synchronisez les flux de passagers entre plusieurs lignes et modes de transport pour réduire les temps d'attente."
+            },
+            {
+                "title": "Tableaux de bord analytiques",
+                "desc": "Rapports détaillés sur la fréquentation, les retards et les performances pour une prise de décision éclairée."
+            },
+            {
+                "title": "Alertes & notifications",
+                "desc": "Système d'alertes automatiques pour les incidents, retards ou anomalies détectés sur le réseau."
+            },
+            {
+                "title": "API ouverte",
+                "desc": "Intégration facile avec les systèmes existants des opérateurs de transport via une API RESTful documentée."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "Transport urbain",
+                "title": "Réseaux de bus municipaux",
+                "desc": "Les villes utilisent OtoStop pour optimiser leurs réseaux de bus, réduire les temps d'attente et améliorer la satisfaction des usagers."
+            },
+            {
+                "tag": "Mobilité partagée",
+                "title": "Opérateurs de covoiturage",
+                "desc": "Les plateformes de covoiturage intègrent OtoStop pour coordonner les points de prise en charge et maximiser le taux de remplissage."
+            },
+            {
+                "tag": "Logistique",
+                "title": "Livraison du dernier kilomètre",
+                "desc": "Les entreprises de livraison utilisent OtoStop pour optimiser les tournées et réduire les coûts opérationnels."
+            }
+        ],
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "40%",
+                "label": "Réduction des temps d'attente"
+            },
+            {
+                "number": "25%",
+                "label": "Économies sur les coûts opérationnels"
+            },
+            {
+                "number": "98%",
+                "label": "Disponibilité de la plateforme"
+            },
+            {
+                "number": "3×",
+                "label": "Amélioration de la satisfaction usager"
+            }
+        ],
+        "cta_text": "Intéressé par OtoStop ?",
+        "cta_button": "Nous contacter",
+        "socialProof": {
+            "caseStudy": {
+                "company": "Keolis Métropole",
+                "industry": "Transport urbain",
+                "result": "−38% de temps d'attente moyen",
+                "quote": "OtoStop nous a permis de repenser entièrement la coordination de nos lignes de bus. La visibilité en temps réel a transformé notre façon d'opérer."
+            }
+        }
+    },
+    "zehouse_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "ZEHOUSE"
+        ],
+        "tags": [
+            "Immobilier & Smart Home",
+            "Prod_02"
+        ],
+        "title": "ZEHOUSE",
+        "subtitle": "Habitat connecté",
+        "intro": "ZEHOUSE est une plateforme de mise en relation des professionnels de l'immobilier B2BC. Solution de gestion immobilière et domotique avec pilotage des biens, suivi des locataires et automatisation des espaces de vie.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Gestion des biens immobiliers",
+                "desc": "Centralisez la gestion de votre portefeuille immobilier : contrats, documents, états des lieux et historiques en un seul endroit."
+            },
+            {
+                "title": "Suivi des locataires",
+                "desc": "Gérez les profils locataires, les paiements de loyer, les demandes de maintenance et la communication en temps réel."
+            },
+            {
+                "title": "Domotique intégrée",
+                "desc": "Contrôlez l'éclairage, la température, la sécurité et les appareils connectés depuis une interface unifiée."
+            },
+            {
+                "title": "Automatisation des espaces",
+                "desc": "Programmez des scénarios d'automatisation pour optimiser la consommation énergétique et le confort des occupants."
+            },
+            {
+                "title": "Rapports financiers",
+                "desc": "Suivez les revenus locatifs, les charges et la rentabilité de chaque bien avec des tableaux de bord financiers détaillés."
+            },
+            {
+                "title": "Maintenance prédictive",
+                "desc": "Anticipez les pannes et planifiez les interventions grâce aux capteurs IoT et aux algorithmes prédictifs."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "PropTech",
+                "title": "Agences immobilières",
+                "desc": "Les agences utilisent ZEHOUSE pour gérer leur portefeuille de biens, automatiser les processus administratifs et améliorer la relation locataire."
+            },
+            {
+                "tag": "Smart Home",
+                "title": "Résidences connectées",
+                "desc": "Les promoteurs immobiliers intègrent ZEHOUSE pour offrir des logements intelligents avec contrôle domotique complet."
+            },
+            {
+                "tag": "Investissement",
+                "title": "Investisseurs immobiliers",
+                "desc": "Les investisseurs utilisent ZEHOUSE pour suivre la performance de leur portefeuille et optimiser la rentabilité de leurs biens."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Foncia Groupe",
+                "industry": "Gestion immobilière",
+                "result": "−60% de tâches administratives manuelles",
+                "quote": "ZEHOUSE a révolutionné notre façon de gérer les biens. Nos gestionnaires gagnent des heures chaque semaine et nos locataires sont bien plus satisfaits."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "60%",
+                "label": "Réduction des tâches administratives"
+            },
+            {
+                "number": "30%",
+                "label": "Économies d'énergie"
+            },
+            {
+                "number": "95%",
+                "label": "Satisfaction des locataires"
+            },
+            {
+                "number": "2×",
+                "label": "Rendement locatif amélioré"
+            }
+        ],
+        "cta_text": "Intéressé par ZEHOUSE ?",
+        "cta_button": "Nous contacter"
+    },
+    "zetravel_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "ZETRAVEL"
+        ],
+        "tags": [
+            "TravelTech",
+            "Prod_03"
+        ],
+        "title": "ZETRAVEL",
+        "subtitle": "Voyages sans friction",
+        "intro": "Application de planification et réservation de voyages. Itinéraires personnalisés, gestion des réservations et expériences de voyage sur mesure pour des aventures inoubliables.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Planification d'itinéraires IA",
+                "desc": "Générez des itinéraires personnalisés en quelques secondes grâce à l'IA, adaptés à vos préférences, budget et contraintes de temps."
+            },
+            {
+                "title": "Réservation centralisée",
+                "desc": "Réservez vols, hôtels, activités et transports depuis une seule interface, avec comparaison des prix en temps réel."
+            },
+            {
+                "title": "Gestion des voyages d'affaires",
+                "desc": "Outils dédiés aux entreprises pour gérer les déplacements professionnels, les notes de frais et la conformité aux politiques voyages."
+            },
+            {
+                "title": "Recommandations contextuelles",
+                "desc": "Suggestions d'activités, restaurants et expériences basées sur la localisation, la météo et les préférences de l'utilisateur."
+            },
+            {
+                "title": "Partage & collaboration",
+                "desc": "Planifiez des voyages en groupe avec des outils de collaboration en temps réel et de vote sur les activités."
+            },
+            {
+                "title": "Mode hors ligne",
+                "desc": "Accédez à vos itinéraires, réservations et cartes même sans connexion internet pendant vos déplacements."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "Tourisme",
+                "title": "Agences de voyage",
+                "desc": "Les agences utilisent ZETRAVEL pour créer et gérer des packages touristiques personnalisés, réduisant le temps de conception de 70%."
+            },
+            {
+                "tag": "Corporate",
+                "title": "Voyages d'affaires",
+                "desc": "Les entreprises déploient ZETRAVEL pour centraliser la gestion des déplacements professionnels et optimiser les coûts."
+            },
+            {
+                "tag": "Loisirs",
+                "title": "Voyageurs indépendants",
+                "desc": "Les voyageurs individuels utilisent ZETRAVEL pour planifier des aventures sur mesure avec des recommandations IA ultra-personnalisées."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Club Med",
+                "industry": "Tourisme haut de gamme",
+                "result": "−70% de temps de planification itinéraire",
+                "quote": "ZETRAVEL a transformé notre processus de création de séjours sur mesure. Nos conseillers peuvent désormais proposer des itinéraires personnalisés en quelques minutes."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "70%",
+                "label": "Gain de temps de planification"
+            },
+            {
+                "number": "20%",
+                "label": "Économies sur les réservations"
+            },
+            {
+                "number": "4.8/5",
+                "label": "Note de satisfaction utilisateur"
+            },
+            {
+                "number": "50+",
+                "label": "Destinations couvertes"
+            }
+        ],
+        "cta_text": "Intéressé par ZETRAVEL ?",
+        "cta_button": "Nous contacter"
+    },
+    "logistikagricol_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "LogistikAgricol"
+        ],
+        "tags": [
+            "AgriTech & Logistique",
+            "Prod_04"
+        ],
+        "title": "LogistikAgricol",
+        "subtitle": "Agriculture numérique",
+        "intro": "Logiciel de gestion logistique agricole. Traçabilité des cultures, optimisation des stocks, coordination des livraisons et tableaux de bord pour exploitants agricoles modernes.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Traçabilité des cultures",
+                "desc": "Suivez chaque lot de production de la semence à la livraison finale avec une traçabilité complète et certifiable."
+            },
+            {
+                "title": "Gestion des stocks agricoles",
+                "desc": "Optimisez vos niveaux de stock d'intrants, de semences et de produits récoltés pour éviter les ruptures et les pertes."
+            },
+            {
+                "title": "Coordination des livraisons",
+                "desc": "Planifiez et optimisez les tournées de collecte et de livraison pour réduire les coûts de transport et les délais."
+            },
+            {
+                "title": "Tableaux de bord exploitants",
+                "desc": "Visualisez en temps réel les performances de votre exploitation : rendements, coûts, marges et prévisions de récolte."
+            },
+            {
+                "title": "Gestion des fournisseurs",
+                "desc": "Centralisez les relations avec vos fournisseurs d'intrants, négociez les prix et suivez les commandes en cours."
+            },
+            {
+                "title": "Conformité & certifications",
+                "desc": "Générez automatiquement les documents de conformité pour les certifications bio, les normes sanitaires et les audits."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "AgriTech",
+                "title": "Exploitations agricoles",
+                "desc": "Les agriculteurs utilisent LogistikAgricol pour digitaliser leur gestion quotidienne et améliorer la rentabilité de leur exploitation."
+            },
+            {
+                "tag": "Coopératives",
+                "title": "Coopératives agricoles",
+                "desc": "Les coopératives coordonnent la collecte, le stockage et la commercialisation des productions de leurs membres via LogistikAgricol."
+            },
+            {
+                "tag": "Agro-industrie",
+                "title": "Industries agroalimentaires",
+                "desc": "Les industriels utilisent LogistikAgricol pour sécuriser leur approvisionnement et garantir la traçabilité de leurs matières premières."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Coopérative Terrena",
+                "industry": "Coopérative agricole",
+                "result": "−35% de pertes post-récolte sur la saison",
+                "quote": "LogistikAgricol nous a permis de coordonner la collecte de 12 000 adhérents avec une précision inégalée. La traçabilité est désormais totale, de la parcelle à la livraison."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "35%",
+                "label": "Réduction des pertes post-récolte"
+            },
+            {
+                "number": "28%",
+                "label": "Économies sur la logistique"
+            },
+            {
+                "number": "100%",
+                "label": "Traçabilité garantie"
+            },
+            {
+                "number": "5×",
+                "label": "Retour sur investissement"
+            }
+        ],
+        "cta_text": "Intéressé par LogistikAgricol ?",
+        "cta_button": "Nous contacter"
+    },
+    "dirtymeta_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "Dirty Meta"
+        ],
+        "tags": [
+            "Data & Analytics",
+            "Prod_05"
+        ],
+        "title": "Dirty Meta",
+        "subtitle": "Données brutes, insights nets",
+        "intro": "DIRTY META est le Jeu immersif le plus bizarre au monde",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Extraction de métadonnées",
+                "desc": "Extrayez automatiquement les métadonnées de toutes vos sources de données : fichiers, bases de données, APIs et flux en temps réel."
+            },
+            {
+                "title": "Nettoyage & normalisation",
+                "desc": "Détectez et corrigez les anomalies, doublons et incohérences dans vos données grâce à des règles de nettoyage configurables."
+            },
+            {
+                "title": "Pipeline ETL visuel",
+                "desc": "Construisez des pipelines de transformation de données avec une interface drag-and-drop sans écrire une ligne de code."
+            },
+            {
+                "title": "Catalogage des données",
+                "desc": "Créez un catalogue centralisé de toutes vos données avec des métadonnées enrichies, des tags et des descriptions automatiques."
+            },
+            {
+                "title": "Qualité des données",
+                "desc": "Mesurez et suivez la qualité de vos données avec des scores de complétude, d'exactitude et de cohérence en temps réel."
+            },
+            {
+                "title": "Gouvernance des données",
+                "desc": "Définissez des politiques d'accès, de rétention et de conformité pour garantir la gouvernance de vos actifs de données."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "Data Engineering",
+                "title": "Équipes data & analytics",
+                "desc": "Les data engineers utilisent Dirty Meta pour automatiser le nettoyage des données et réduire le temps de préparation de 80%."
+            },
+            {
+                "tag": "E-commerce",
+                "title": "Plateformes e-commerce",
+                "desc": "Les e-commerçants nettoient et enrichissent leurs catalogues produits pour améliorer la recherche et les recommandations."
+            },
+            {
+                "tag": "Finance",
+                "title": "Institutions financières",
+                "desc": "Les banques et assurances utilisent Dirty Meta pour assurer la conformité réglementaire et la qualité de leurs données clients."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Cdiscount",
+                "industry": "E-commerce",
+                "result": "10× plus rapide sur les analyses de données produits",
+                "quote": "Dirty Meta a transformé notre pipeline de données. Nous avons réduit de 80% le temps passé à nettoyer nos catalogues et nos équipes peuvent enfin se concentrer sur l'analyse."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "80%",
+                "label": "Réduction du temps de préparation"
+            },
+            {
+                "number": "99%",
+                "label": "Précision des données nettoyées"
+            },
+            {
+                "number": "10×",
+                "label": "Accélération des analyses"
+            },
+            {
+                "number": "0",
+                "label": "Compétences code requises"
+            }
+        ],
+        "cta_text": "Intéressé par Dirty Meta ?",
+        "cta_button": "Nous contacter"
+    },
+    "healthof_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "Health-of"
+        ],
+        "tags": [
+            "HealthTech",
+            "Prod_06"
+        ],
+        "title": "Health-of",
+        "subtitle": "Santé augmentée",
+        "intro": "Plateforme de suivi de santé et de bien-être. Dossiers patients numériques, téléconsultation et outils de prévention pour professionnels de santé et patients.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Dossier patient numérique",
+                "desc": "Centralisez l'historique médical complet de chaque patient : consultations, ordonnances, résultats d'examens et antécédents."
+            },
+            {
+                "title": "Téléconsultation",
+                "desc": "Plateforme de consultation médicale à distance sécurisée avec vidéo HD, partage de documents et prescription électronique."
+            },
+            {
+                "title": "Suivi de bien-être",
+                "desc": "Tableaux de bord personnalisés pour suivre les indicateurs de santé, les objectifs de bien-être et les programmes de prévention."
+            },
+            {
+                "title": "Gestion des rendez-vous",
+                "desc": "Système de prise de rendez-vous en ligne avec rappels automatiques, gestion des agendas et réduction des no-shows."
+            },
+            {
+                "title": "Interopérabilité",
+                "desc": "Intégration avec les systèmes hospitaliers, laboratoires et pharmacies via les standards HL7 FHIR et DICOM."
+            },
+            {
+                "title": "Conformité RGPD & santé",
+                "desc": "Hébergement des données de santé certifié HDS, chiffrement de bout en bout et conformité aux réglementations sanitaires."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "HealthTech",
+                "title": "Cliniques & hôpitaux",
+                "desc": "Les établissements de santé déploient Health-of pour digitaliser les parcours patients et améliorer la coordination des soins."
+            },
+            {
+                "tag": "Télémédecine",
+                "title": "Médecins libéraux",
+                "desc": "Les praticiens utilisent Health-of pour proposer des consultations à distance et gérer leur patientèle de manière efficace."
+            },
+            {
+                "tag": "Prévention",
+                "title": "Programmes de santé publique",
+                "desc": "Les organismes de santé publique utilisent Health-of pour déployer des programmes de prévention et de suivi épidémiologique."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Ramsay Santé",
+                "industry": "Cliniques privées",
+                "result": "−50% de délais de consultation en télémédecine",
+                "quote": "Health-of a permis à nos praticiens de proposer des consultations à distance de qualité tout en maintenant la continuité des soins. L'adoption par les patients a été immédiate."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "50%",
+                "label": "Réduction des délais de consultation"
+            },
+            {
+                "number": "40%",
+                "label": "Amélioration de l'observance"
+            },
+            {
+                "number": "99.9%",
+                "label": "Disponibilité de la plateforme"
+            },
+            {
+                "number": "100%",
+                "label": "Conformité réglementaire"
+            }
+        ],
+        "cta_text": "Intéressé par Health-of ?",
+        "cta_button": "Nous contacter"
+    },
+    "aimimicry_page": {
+        "breadcrumb": [
+            "Accueil",
+            "Solutions",
+            "AI-Mimicry"
+        ],
+        "tags": [
+            "Intelligence Artificielle",
+            "Prod_07"
+        ],
+        "title": "AI-Mimicry",
+        "subtitle": "L'IA qui s'adapte",
+        "intro": "Moteur d'intelligence artificielle générative et adaptative. Agents conversationnels, automatisation de processus et modèles IA personnalisés pour chaque métier.",
+        "features_title": "Fonctionnalités",
+        "features": [
+            {
+                "title": "Agents conversationnels",
+                "desc": "Déployez des assistants IA conversationnels capables de comprendre le contexte métier et de répondre avec précision à vos utilisateurs."
+            },
+            {
+                "title": "Automatisation de processus",
+                "desc": "Automatisez les tâches répétitives et les workflows complexes grâce à des agents IA autonomes qui apprennent de vos processus."
+            },
+            {
+                "title": "Fine-tuning de modèles",
+                "desc": "Personnalisez des modèles LLM sur vos données propriétaires pour obtenir des performances optimales sur votre domaine métier."
+            },
+            {
+                "title": "Orchestration multi-agents",
+                "desc": "Coordonnez plusieurs agents IA spécialisés pour résoudre des problèmes complexes nécessitant des compétences multiples."
+            },
+            {
+                "title": "RAG & base de connaissances",
+                "desc": "Connectez l'IA à vos documents, bases de données et systèmes existants pour des réponses précises et contextualisées."
+            },
+            {
+                "title": "Monitoring & explicabilité",
+                "desc": "Suivez les performances de vos modèles IA, détectez les dérives et comprenez les décisions prises grâce aux outils d'explicabilité."
+            }
+        ],
+        "use_cases_title": "Cas d'usage",
+        "use_cases": [
+            {
+                "tag": "Service client",
+                "title": "Automatisation du support",
+                "desc": "Les entreprises déploient AI-Mimicry pour automatiser 80% des demandes de support client avec des agents IA contextuels."
+            },
+            {
+                "tag": "RH & recrutement",
+                "title": "Screening de candidatures",
+                "desc": "Les équipes RH utilisent AI-Mimicry pour analyser les CV, conduire des pré-entretiens et identifier les meilleurs profils."
+            },
+            {
+                "tag": "Finance",
+                "title": "Analyse de documents financiers",
+                "desc": "Les institutions financières automatisent l'analyse de contrats, rapports et documents réglementaires avec AI-Mimicry."
+            }
+        ],
+        "socialProof": {
+            "caseStudy": {
+                "company": "Allianz France",
+                "industry": "Assurance",
+                "result": "80% des demandes support traitées automatiquement",
+                "quote": "AI-Mimicry a dépassé toutes nos attentes. Les agents IA comprennent le contexte assurantiel avec une précision remarquable et nos clients ne font plus la différence avec un conseiller humain."
+            }
+        },
+        "benefits_title": "Bénéfices",
+        "benefits": [
+            {
+                "number": "80%",
+                "label": "Tâches automatisées"
+            },
+            {
+                "number": "10×",
+                "label": "Productivité des équipes"
+            },
+            {
+                "number": "24/7",
+                "label": "Disponibilité des agents IA"
+            },
+            {
+                "number": "6 sem.",
+                "label": "Délai de déploiement"
+            }
+        ],
+        "cta_text": "Intéressé par AI-Mimicry ?",
+        "cta_button": "Nous contacter"
+    }
+}
