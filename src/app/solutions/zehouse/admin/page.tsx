@@ -102,6 +102,7 @@ export default function ZehouseAdmin() {
   const [promoDurationDays, setPromoDurationDays] = useState('30');
   const [promoMaxUses, setPromoMaxUses] = useState('50');
   const [loadingPromo, setLoadingPromo] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const showToast = (msg: string, type: 'ok' | 'err' = 'ok') => {
     setToast({ msg, type });
@@ -301,9 +302,15 @@ export default function ZehouseAdmin() {
           {toast.type === 'ok' ? '✓' : '⚠'} {toast.msg}
         </div>
       )}
-
       {/* Sidebar */}
-      <aside className="fixed left-0 top-0 h-full w-60 bg-[#0a0d14] border-r border-white/[0.06] flex flex-col z-40">
+      {/* Mobile overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+      <aside className={`fixed left-0 top-0 h-full w-60 bg-[#0a0d14] border-r border-white/[0.06] flex flex-col z-50 transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
         {/* Logo */}
         <div className="px-6 py-5 border-b border-white/[0.06]">
           <div className="flex items-center gap-3">
@@ -324,7 +331,10 @@ export default function ZehouseAdmin() {
           {TABS.map(tab => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => {
+                setActiveTab(tab.id);
+                setIsMobileMenuOpen(false);
+              }}
               className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all text-left
                 ${activeTab === tab.id
                   ? 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30'
@@ -367,15 +377,23 @@ export default function ZehouseAdmin() {
       </aside>
 
       {/* Main content */}
-      <main className="ml-60 min-h-screen">
+      <main className="md:ml-60 min-h-screen w-full md:w-auto">
         {/* Top bar */}
-        <header className="sticky top-0 z-30 bg-[#050810]/80 backdrop-blur border-b border-white/[0.06] px-8 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-lg font-bold text-white">
-              {TABS.find(t => t.id === activeTab)?.icon}{' '}
-              {TABS.find(t => t.id === activeTab)?.label}
-            </h1>
-            <p className="text-xs text-slate-500">Console d&apos;administration Zehouse · Temps réel Supabase</p>
+        <header className="sticky top-0 z-30 bg-[#050810]/80 backdrop-blur border-b border-white/[0.06] px-4 md:px-8 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <button 
+              className="md:hidden p-2 -ml-2 text-slate-400 hover:text-white"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+            <div>
+              <h1 className="text-base md:text-lg font-bold text-white flex items-center gap-2">
+                <span className="hidden sm:inline">{TABS.find(t => t.id === activeTab)?.icon}</span>
+                {TABS.find(t => t.id === activeTab)?.label}
+              </h1>
+              <p className="text-[10px] md:text-xs text-slate-500 hidden sm:block">Console d&apos;administration Zehouse · Temps réel Supabase</p>
+            </div>
           </div>
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-full">
@@ -391,13 +409,13 @@ export default function ZehouseAdmin() {
           </div>
         </header>
 
-        <div className="px-8 py-8">
+        <div className="px-4 md:px-8 py-6 md:py-8 w-full max-w-[100vw] overflow-x-hidden">
 
           {/* ── DASHBOARD ──────────────────────────────────────────────── */}
           {activeTab === 'dashboard' && (
             <div className="space-y-8">
               {/* KPI Cards */}
-              <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
                 <StatCard label="Total Annonces" value={stats.totalListings} color="bg-indigo-500/10" icon={<svg className="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>} />
                 <StatCard label="Annonces Actives" value={stats.activeListings} color="bg-emerald-500/10" icon={<svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>} />
                 <StatCard label="Membres" value={stats.totalUsers} color="bg-blue-500/10" icon={<svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>} />
@@ -497,8 +515,8 @@ export default function ZehouseAdmin() {
                 </div>
                 <span className="text-xs text-slate-500 font-mono">{filteredUsers.length} membres</span>
               </div>
-              <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl overflow-hidden">
-                <table className="w-full">
+              <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl overflow-x-auto">
+                <table className="w-full min-w-[800px]">
                   <thead>
                     <tr className="border-b border-white/[0.06] bg-white/[0.02]">
                       <th className="px-5 py-3.5 text-left text-[11px] font-bold uppercase tracking-widest text-slate-500">Membre</th>
@@ -729,8 +747,8 @@ export default function ZehouseAdmin() {
                   <p className="text-xs text-slate-500 uppercase tracking-widest">Expirés</p>
                 </div>
               </div>
-              <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl overflow-hidden">
-                <table className="w-full">
+              <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl overflow-x-auto">
+                <table className="w-full min-w-[800px]">
                   <thead>
                     <tr className="border-b border-white/[0.06] bg-white/[0.02]">
                       <th className="px-5 py-3.5 text-left text-[11px] font-bold uppercase tracking-widest text-slate-500">Client</th>
@@ -808,7 +826,7 @@ export default function ZehouseAdmin() {
                 <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl p-5 md:col-span-2 space-y-3">
                   <h4 className="font-bold text-white text-sm">Codes Actifs / Utilisés</h4>
                   <div className="overflow-x-auto">
-                    <table className="w-full text-xs">
+                    <table className="w-full text-xs min-w-[500px]">
                       <thead>
                         <tr className="border-b border-white/[0.06] text-slate-500 text-left">
                           <th className="pb-2 font-semibold">Code</th>
