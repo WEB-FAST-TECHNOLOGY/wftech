@@ -1476,16 +1476,37 @@ function PublierTab({ userId, onPublished }: { userId: string; onPublished: ()=>
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
-  const [form, setForm] = useState({ title:'',description:'',listing_type:'sale',property_type:'Appartement',price:'',surface:'',rooms:'1',address:'',lat:'3.8480',lng:'11.5021',image_url:'' });
-  const set = (k: string, v: string) => setForm(f=>({...f,[k]:v}));
+  const [form, setForm] = useState({ title:'',description:'',listing_type:'sale',property_type:'Appartement',price:'',surface:'',rooms:'1',address:'',lat:'3.8480',lng:'11.5021',image_url:'', image_file: null as File|null, video_file: null as File|null });
+  const set = (k: string, v: any) => setForm(f=>({...f,[k]:v}));
   const PROP_TYPES = ['Appartement','Maison','Studio','Villa','Bureau','Terrain','Duplex','Villa standing'];
   const handleSubmit = async () => {
     setLoading(true); setError('');
     try {
-      const {error:err} = await supabase.from('user_listings').insert({ user_id: userId, title: form.title, description: form.description, listing_type: form.listing_type, property_type: form.property_type, price: Number(form.price), surface: Number(form.surface), rooms: Number(form.rooms), address: form.address, lat: Number(form.lat), lng: Number(form.lng), image_url: form.image_url||'', is_active: true });
+      let finalImageUrl = '';
+      let finalVideoUrl = '';
+      const uniqueId = Math.random().toString(36).substring(7);
+
+      if (form.image_file) {
+        const ext = form.image_file.name.split('.').pop();
+        const path = `${userId}/${uniqueId}/main.${ext}`;
+        const { error: uploadError } = await supabase.storage.from('listings_media').upload(path, form.image_file);
+        if (uploadError) throw uploadError;
+        finalImageUrl = supabase.storage.from('listings_media').getPublicUrl(path).data.publicUrl;
+      }
+
+      if (form.video_file) {
+        if (form.video_file.size > 50 * 1024 * 1024) throw new Error("La vidéo dépasse 50 Mo");
+        const ext = form.video_file.name.split('.').pop();
+        const path = `${userId}/${uniqueId}/video.${ext}`;
+        const { error: uploadError } = await supabase.storage.from('listings_media').upload(path, form.video_file);
+        if (uploadError) throw uploadError;
+        finalVideoUrl = supabase.storage.from('listings_media').getPublicUrl(path).data.publicUrl;
+      }
+
+      const {error:err} = await supabase.from('user_listings').insert({ user_id: userId, title: form.title, description: form.description, listing_type: form.listing_type, property_type: form.property_type, price: Number(form.price), surface: Number(form.surface), rooms: Number(form.rooms), address: form.address, lat: Number(form.lat), lng: Number(form.lng), image_url: finalImageUrl||'', video_url: finalVideoUrl||'', is_active: true });
       if (err) throw err;
       setSuccess(true);
-      setTimeout(() => { setSuccess(false); setStep(1); setForm({title:'',description:'',listing_type:'sale',property_type:'Appartement',price:'',surface:'',rooms:'1',address:'',lat:'3.8480',lng:'11.5021',image_url:''}); onPublished(); }, 2500);
+      setTimeout(() => { setSuccess(false); setStep(1); setForm({title:'',description:'',listing_type:'sale',property_type:'Appartement',price:'',surface:'',rooms:'1',address:'',lat:'3.8480',lng:'11.5021',image_url:'', image_file: null, video_file: null}); onPublished(); }, 2500);
     } catch(err:any) { setError(err.message); } finally { setLoading(false); }
   };
   if (success) return (
@@ -1531,10 +1552,28 @@ function PublierTab({ userId, onPublished }: { userId: string; onPublished: ()=>
               <div><label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Surface (m²) *</label><input type="number" value={form.surface} onChange={e=>set('surface',e.target.value)} placeholder="65" className="w-full px-4 py-3 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary"/></div>
               <div><label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Pièces</label><select value={form.rooms} onChange={e=>set('rooms',e.target.value)} className="w-full px-4 py-3 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary">{[1,2,3,4,5,6,7,8,9,10].map(n=><option key={n} value={n}>{n}p</option>)}</select></div>
             </div>
-            <div><label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">URL photo</label><input type="url" value={form.image_url} onChange={e=>set('image_url',e.target.value)} placeholder="https://…/photo.jpg" className="w-full px-4 py-3 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary"/></div>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Photo principale *</label>
+                <input type="file" accept="image/*" onChange={e=>set('image_file',e.target.files?.[0]||null)} className="w-full px-4 py-2 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer"/>
+              </div>
+              <div>
+                <label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Vidéo (Optionnel, Max 50Mo)</label>
+                <input type="file" accept="video/*" onChange={e=>{
+                  const file = e.target.files?.[0]||null;
+                  if (file && file.size > 50 * 1024 * 1024) {
+                    alert('La vidéo dépasse 50 Mo.');
+                    e.target.value = '';
+                    set('video_file', null);
+                  } else {
+                    set('video_file', file);
+                  }
+                }} className="w-full px-4 py-2 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer"/>
+              </div>
+            </div>
             <div className="flex gap-3">
               <button onClick={()=>setStep(1)} className="flex-1 py-3.5 rounded-2xl font-bold text-sm border border-border text-foreground hover:border-primary transition-all">Retour</button>
-              <button onClick={()=>form.price&&form.surface?setStep(3):undefined} disabled={!form.price||!form.surface} className="flex-1 bg-gradient-to-r from-primary to-gradient-end text-white py-3.5 rounded-2xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20 disabled:opacity-40">Suivant</button>
+              <button onClick={()=>form.price&&form.surface&&form.image_file?setStep(3):undefined} disabled={!form.price||!form.surface||!form.image_file} className="flex-1 bg-gradient-to-r from-primary to-gradient-end text-white py-3.5 rounded-2xl font-bold text-sm hover:opacity-90 transition-all shadow-lg shadow-primary/20 disabled:opacity-40">Suivant</button>
             </div>
           </div>
         )}
