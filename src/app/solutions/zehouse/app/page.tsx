@@ -1495,7 +1495,7 @@ function PublierTab({ userId, onPublished }: { userId: string; onPublished: ()=>
       }
 
       if (form.video_file) {
-        if (form.video_file.size > 50 * 1024 * 1024) throw new Error("La vidéo dépasse 50 Mo");
+        if (form.video_file.size > 25 * 1024 * 1024) throw new Error("La vidéo dépasse 25 Mo");
         const ext = form.video_file.name.split('.').pop();
         const path = `${userId}/${uniqueId}/video.${ext}`;
         const { error: uploadError } = await supabase.storage.from('listings_media').upload(path, form.video_file);
@@ -1558,11 +1558,11 @@ function PublierTab({ userId, onPublished }: { userId: string; onPublished: ()=>
                 <input type="file" accept="image/*" onChange={e=>set('image_file',e.target.files?.[0]||null)} className="w-full px-4 py-2 bg-bg border border-border rounded-2xl text-sm focus:outline-none focus:border-primary file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer"/>
               </div>
               <div>
-                <label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Vidéo (Optionnel, Max 50Mo)</label>
+                <label className="text-xs font-bold text-muted uppercase tracking-wider block mb-1.5">Vidéo (Optionnel, Max 25Mo)</label>
                 <input type="file" accept="video/*" onChange={e=>{
                   const file = e.target.files?.[0]||null;
-                  if (file && file.size > 50 * 1024 * 1024) {
-                    alert('La vidéo dépasse 50 Mo.');
+                  if (file && file.size > 25 * 1024 * 1024) {
+                    alert('La vidéo dépasse 25 Mo.');
                     e.target.value = '';
                     set('video_file', null);
                   } else {
