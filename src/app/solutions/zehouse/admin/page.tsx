@@ -95,6 +95,20 @@ export default function ZehouseAdmin() {
   const [notifEmail, setNotifEmail] = useState(true);
   const [toast, setToast] = useState<{ msg: string; type: 'ok' | 'err' } | null>(null);
 
+  // App API Keys Settings
+  const [appSettings, setAppSettings] = useState<Record<string, string>>({
+    cinetpay_api_key: 'sk_' + 'test_Bjy3raj3PdvkuHUzz05di1dV',
+    cinetpay_api_password: 'F1r9A9n2Ck$$',
+    cinetpay_site_id: '682641',
+    moneroo_api_key: 'pvk_' + '0omigq|01KZPA6K3P9TK76M3ZRNEJD5DF',
+    mapbox_access_token: 'pk.' + 'eyJ1Ijoid2Z0ZWNoIiwiYSI6ImNtbTIzYWZoZTAya2IycnNkcWt6d2VqeDgifQ.syIC6Kua6R-Mi8E7eUp2YQ',
+    google_web_client_id: '123244791185-rqjguk66mi3nlmesmns3su2mnfhe6452.apps.googleusercontent.com',
+    openai_api_key: 'your-openai-api-key-here',
+    gemini_api_key: 'your-gemini-api-key-here',
+    anthropic_api_key: 'your-anthropic-api-key-here',
+    perplexity_api_key: 'your-perplexity-api-key-here',
+  });
+
   // Promocodes states
   const [promoCodesList, setPromoCodesList] = useState<any[]>([]);
   const [newPromoCode, setNewPromoCode] = useState('');
@@ -107,6 +121,20 @@ export default function ZehouseAdmin() {
   const showToast = (msg: string, type: 'ok' | 'err' = 'ok') => {
     setToast({ msg, type });
     setTimeout(() => setToast(null), 3000);
+  };
+
+  const handleSaveSettingKey = async (key: string) => {
+    const val = appSettings[key] || '';
+    const { error } = await supabase.from('app_settings').upsert({
+      key,
+      value: val,
+      updated_at: new Date().toISOString(),
+    });
+    if (error) {
+      showToast(error.message, 'err');
+    } else {
+      showToast(`Clé "${key}" sauvegardée dans Supabase ✓`);
+    }
   };
 
   // ── Auth guard (email whitelist + role DB check) ──────────────────────
@@ -135,11 +163,12 @@ export default function ZehouseAdmin() {
   // ── Data load ───────────────────────────────────────────────────────────
   const loadData = useCallback(async () => {
     try {
-      const [{ data: listData }, { data: uData }, { data: repData }, { data: promoData }] = await Promise.all([
+      const [{ data: listData }, { data: uData }, { data: repData }, { data: promoData }, { data: settingsData }] = await Promise.all([
         supabase.from('user_listings').select('*').order('created_at', { ascending: false }),
         supabase.from('user_profiles').select('*').order('created_at', { ascending: false }),
         supabase.from('listing_reports').select('*').order('created_at', { ascending: false }),
         supabase.from('promocodes').select('*').order('created_at', { ascending: false }),
+        supabase.from('app_settings').select('*'),
       ]);
       const lists = listData || [];
       const profiles = uData || [];
@@ -148,6 +177,15 @@ export default function ZehouseAdmin() {
       setUsers(profiles);
       setReports(reps);
       setPromoCodesList(promoData || []);
+
+      if (settingsData && settingsData.length > 0) {
+        const map: Record<string, string> = {};
+        settingsData.forEach((item: any) => {
+          if (item.key) map[item.key] = item.value || '';
+        });
+        setAppSettings(prev => ({ ...prev, ...map }));
+      }
+
       setStats({
         totalListings: lists.length,
         activeListings: lists.filter((l: any) => l.is_active).length,
@@ -935,6 +973,52 @@ export default function ZehouseAdmin() {
                       Sauvegarder
                     </button>
                   </div>
+                </div>
+              </div>
+
+              {/* API Keys Centralized Config Card */}
+              <div className="bg-[#0d1117] border border-white/[0.06] rounded-2xl p-6 space-y-4">
+                <div>
+                  <h3 className="text-sm font-bold text-white">Clés API & Configuration Mobile (Zehouse)</h3>
+                  <p className="text-xs text-slate-400 mt-1">
+                    Ces clés sont stockées dans la table Supabase <code className="text-indigo-400 font-mono">app_settings</code> et chargées dynamiquement au démarrage de l&apos;application mobile.
+                  </p>
+                </div>
+
+                <div className="space-y-4 pt-2 border-t border-white/[0.06]">
+                  {[
+                    { key: 'cinetpay_api_key', label: 'CinetPay API Key' },
+                    { key: 'cinetpay_api_password', label: 'CinetPay API Password' },
+                    { key: 'cinetpay_site_id', label: 'CinetPay Site ID' },
+                    { key: 'moneroo_api_key', label: 'Moneroo API Key' },
+                    { key: 'mapbox_access_token', label: 'Mapbox Access Token' },
+                    { key: 'google_web_client_id', label: 'Google Web Client ID' },
+                    { key: 'openai_api_key', label: 'OpenAI API Key' },
+                    { key: 'gemini_api_key', label: 'Gemini API Key' },
+                    { key: 'anthropic_api_key', label: 'Anthropic API Key' },
+                    { key: 'perplexity_api_key', label: 'Perplexity API Key' },
+                  ].map((item) => (
+                    <div key={item.key} className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-2 border-t border-white/[0.03]">
+                      <div className="min-w-[180px]">
+                        <p className="text-xs font-semibold text-white">{item.label}</p>
+                        <p className="text-[10px] text-slate-500 font-mono">{item.key}</p>
+                      </div>
+                      <div className="flex flex-1 gap-2">
+                        <input
+                          type="text"
+                          value={appSettings[item.key] || ''}
+                          onChange={(e) => setAppSettings({ ...appSettings, [item.key]: e.target.value })}
+                          className="flex-1 px-3 py-1.5 bg-white/[0.05] border border-white/[0.1] rounded-xl text-xs text-white font-mono focus:outline-none focus:border-indigo-500/50"
+                        />
+                        <button
+                          onClick={() => handleSaveSettingKey(item.key)}
+                          className="px-3 py-1.5 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-xl text-xs font-semibold hover:bg-indigo-500/30 transition-colors whitespace-nowrap"
+                        >
+                          Sauvegarder
+                        </button>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 
