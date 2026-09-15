@@ -266,7 +266,7 @@ export default function ZehouseAdmin() {
         return;
       }
       const email = data.session.user.email || '';
-      const ADMIN_EMAILS = ['webfasttechnologysarl@gmail.com', 'admin@zehouse.com'];
+      const ADMIN_EMAILS = ['webfasttechnologysarl@gmail.com', 'admin@zehouse.com', 'maxymtene40@gmail.com'];
       if (!ADMIN_EMAILS.includes(email)) {
         const { data: profile } = await supabase
           .from('user_profiles').select('role').eq('id', data.session.user.id).single();
